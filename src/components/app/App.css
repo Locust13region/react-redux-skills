@@ -1,0 +1,46 @@
+:root {
+	--main-bg-button-color: #5c6bc0;
+}
+
+header,
+main {
+	margin: 0 auto;
+	width: 700px;
+}
+.navBar {
+	background-color: #f9f9f9;
+}
+.menu {
+	height: 60px;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.menuSection {
+	display: flex;
+	gap: 0 15px;
+}
+.menuSection * {
+	color: #ffff;
+	padding: 2px 0;
+	height: 30px;
+	width: 80px;
+	background-color: var(--main-bg-button-color);
+	border-radius: 5px;
+	cursor: pointer;
+}
+a.active {
+	font-weight: bold;
+}
+.loggedIn {
+	border-radius: 50%;
+	width: 30px;
+}
+.container {
+	margin-top: 5px;
+	padding: 40px;
+}
