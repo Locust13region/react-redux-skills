@@ -1,7 +1,8 @@
 const PageNotFound = () => {
 	return (
 		<div>
-			<span>Page does not exist</span>
+			<p>Test page</p>
+			<p>Page does not exist</p>
 		</div>
 	);
 };

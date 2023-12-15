@@ -6,9 +6,11 @@ import PropTypes from "prop-types";
 
 const RoutesTable = () => {
 	const currentUser = useSelector((state) => state.user.currentUser);
+
 	const PrivateRoute = ({ element, logged }) => {
 		return logged ? element : <PageNotFound />;
 	};
+
 	return (
 		<Routes>
 			{menuItems.map(({ route, page, privat }, index) => {

@@ -16,7 +16,7 @@ const User = () => {
 	useEffect(() => {
 		if (localToken) {
 			if (token) {
-				dispatch(getUser(token));
+				dispatch(getUser());
 			} else {
 				dispatch(setToken(localToken));
 			}

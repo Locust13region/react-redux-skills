@@ -1,4 +1,4 @@
-import { Home, News, PrivateNews, PageNotFound } from "../pages";
+import { Home, Products, PrivateRecipes, PageNotFound } from "../pages";
 
 export const menuItems = [
 	{
@@ -12,20 +12,20 @@ export const menuItems = [
 	},
 	{
 		title: "Products",
-		classname: "newsItem",
-		route: "/news",
+		classname: "productsItem",
+		route: "/products",
 		picture: "",
-		alt: "news",
-		page: () => <News />,
+		alt: "products",
+		page: () => <Products />,
 		privat: false,
 	},
 	{
 		title: "Recipes",
-		classname: "privateNewsItem",
-		route: "/privatenews",
+		classname: "privateRecipesItem",
+		route: "/privaterecipes",
 		picture: "",
-		alt: "privatenews",
-		page: () => <PrivateNews />,
+		alt: "privaterecipes",
+		page: () => <PrivateRecipes />,
 		privat: true,
 	},
 	{

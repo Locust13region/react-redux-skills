@@ -5,7 +5,7 @@ import RoutesTable from "../routes";
 
 export default function App() {
 	return (
-		<>
+		<div className="wrapper">
 			<header className="header">
 				<nav className="navBar">
 					<div className="menu">
@@ -17,6 +17,6 @@ export default function App() {
 			<main className="container">
 				<RoutesTable />
 			</main>
-		</>
+		</div>
 	);
 }

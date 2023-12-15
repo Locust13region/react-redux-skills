@@ -3,9 +3,10 @@ import { userRequest } from "../api/request";
 
 export const getUser = createAsyncThunk(
 	"currentUser/getUser",
-	async (token, { rejectWithValue }) => {
+	async (_, { rejectWithValue, getState }) => {
+		const token = getState().token.token;
 		try {
-			return userRequest(token);
+			return await userRequest(token);
 		} catch (error) {
 			return rejectWithValue(error.message);
 		}
