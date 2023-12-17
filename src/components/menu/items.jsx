@@ -3,7 +3,7 @@ import { Home, Products, PrivateRecipes, PageNotFound } from "../pages";
 export const menuItems = [
 	{
 		title: "Home",
-		classname: "homeItem",
+		classname: "menuItem",
 		route: "/",
 		picture: "",
 		alt: "home",
@@ -12,7 +12,7 @@ export const menuItems = [
 	},
 	{
 		title: "Products",
-		classname: "productsItem",
+		classname: "menuItem",
 		route: "/products",
 		picture: "",
 		alt: "products",
@@ -21,7 +21,7 @@ export const menuItems = [
 	},
 	{
 		title: "Recipes",
-		classname: "privateRecipesItem",
+		classname: "menuItem",
 		route: "/privaterecipes",
 		picture: "",
 		alt: "privaterecipes",
@@ -30,7 +30,7 @@ export const menuItems = [
 	},
 	{
 		title: "404",
-		classname: "404Item",
+		classname: "menuItem",
 		route: "/anyPage",
 		picture: "",
 		alt: "404",

@@ -34,6 +34,7 @@ const User = () => {
 		</NavLink>
 	) : (
 		<div
+			className="menuItem"
 			onClick={() => {
 				setShowModal(true);
 			}}
@@ -44,7 +45,7 @@ const User = () => {
 
 	return (
 		<>
-			<div className="menuSection">{user}</div>
+			<div className="userSection ">{user}</div>
 			<ModalLogin
 				showModal={showModal}
 				setShowModal={setShowModal}

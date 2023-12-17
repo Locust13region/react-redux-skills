@@ -25,7 +25,7 @@
 	flex-direction: column;
 }
 .listItemRecipes {
-	width: 420px;
+	width: clamp(279px, 41vw, 420px);
 	min-height: 150px;
 	background-color: #fff;
 	box-shadow: 8px 8px 5px rgba(50, 50, 50, 0.1);
